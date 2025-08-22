@@ -1,4 +1,4 @@
-# Question Label Processor
+# Question Label Classifier
 
 This project processes raw question labels from a Word document, predicting and turning them into standardized canonical labels using a trained SVM model, and compares a separate list of ground truth labels against the raw labels to determine whether each is present.
 
