@@ -36,17 +36,11 @@ The output is two Word documents:
 
 ## Usage
 
-Prepare the training dataset (question_label_variations_expanded.xlsx) with at least two columns:
+Place your raw labels into raw_labels.docx, one per line (a prefilled sample raw_labels.docx is available in the repository)
 
-- raw_label (ex: "Q1", "question one")
+Prepare GroundTruth.docx with a table, the first column (with a header of "Ground Truth") having all the base labels, and a blank second column (with a header of "Found/Not Found"). There is also a sample GroundTruth.docx within the repository.
 
-- canonical_label (ex: "1")
-
-Place your raw labels into raw_labels.docx, one per line.
-
-Prepare GroundTruth.docx with a table, the first column (with a header of "Ground Truth") having all the base labels, and a blank second column (with a header of "Found/Not Found")
-
-Run the script. It will:
+Run the script. The script will:
 
 - Train the SVM model on your Excel dataset.
 
@@ -56,7 +50,7 @@ Run the script. It will:
 
 ## Adding New Ground Truths
 
-- After the first run, GroundTruth.docx will be a table.
+- The GroundTruth.docx will be a table.
 
 - To add more labels, insert new rows into the Ground Truth column of the table.
 
